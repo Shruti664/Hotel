@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Saleh Ghazimoradi" />
+    <meta name="robots" content="follow,index" />
+    <meta
+      name="description"
+      content="This is the best hotel that you can find in the whole world"
+    />
+    <meta name="keywords" content="compfort, peace, coziness" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="#" />
+    <title>Hotel BT | Welcome</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <h1 class="title">HBT</h1>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="hero">
+      <div class="container">
+        <h1 class="title-hero"><span>Enjoy</span> Your Stay</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+          voluptates ratione, impedit dolorem cum error. Lorem ipsum dolor sit
+          amet consectetur adipisicing elit. Enim tempora natus doloremque
+          dolorem distinctio architecto placeat iusto maxime, ipsum eligendi
+          quos eveniet dolor laborum ratione! Magni fuga cum beatae nobis.
+        </p>
+        <button type="submit">About Our Hotel</button>
+      </div>
+    </section>
+    <section class="container-album">
+      <div class="photo"></div>
+      <div class="content-title">
+        <h3 id="title"><span>The History</span> Of Our Hotel</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos
+          exercitationem itaque reprehenderit eligendi? Quo, eveniet debitis
+          exercitationem illum velit consequuntur fuga sed nisi nemo aspernatur
+          id vel neque vitae assumenda!
+        </p>
+        <button type="submit">Read More</button>
+      </div>
+    </section>
+    <section class="categories">
+      <div class="box">
+        <i class="fas fa-hotel 2x"></i>
+        <h3>Great Location</h3>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
+          quaerat reiciendis esse minima maiores voluptas.
+        </p>
+      </div>
+      <div id="colored" class="box">
+        <i class="fas fa-utensils"></i>
+        <h3>Free Meals</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+          aspernatur voluptate accusamus consequuntur ut delectus.
+        </p>
+      </div>
+      <div class="box">
+        <i class="fas fa-dumbbell"></i>
+        <h3>Fitness Room</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat enim
+          nihil assumenda! Illum, cupiditate illo?
+        </p>
+      </div>
+    </section>
+    <footer class="footer">
+      <p>Hotel BT &copy; 2021, All Rights Reserved!<br> By Saleh Ghazimoradi</p>
+    </footer>
+  </body>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Yusei Magic", sans-serif;
+  line-height: 1.7;
+  font-size: 1.6rem;
+}
+
+.header {
+  background-color: #333;
+  overflow: hidden;
+  border-bottom: 2px solid crimson;
+}
+.header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 110rem;
+  margin: auto;
+  text-align: center;
+  padding: 0rem 2rem;
+  overflow: hidden;
+}
+.header .navbar .title {
+  color: #fff;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+}
+.header .navbar ul {
+  margin: 0;
+  padding: 0;
+}
+.header .navbar ul li {
+  display: inline-block;
+}
+
+
+.hero {
+  background: url("https://images.unsplash.com/photo-1444201983204-c43cbd584d93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80")
+    no-repeat center center/cover;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+}
+
+.hero .container {
+  max-width: 110rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
+}
+
+.hero .container h1 {
+  font-size: 5rem;
+  margin-bottom: 2rem;
+}
+
+.hero .container span {
+  color: coral;
+}
+
+.hero .container p {
+  color: #fff;
+  font-size: 1.8rem;
+  margin-bottom: 5rem;
+}
+.hero .container button,
+.container-album .content-title button {
+  border: none;
+  padding: 1.5rem 2rem;
+  font-size: 1.8rem;
+  background-color: #fff;
+  color: #000;
+  box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.3);
+}
+.hero .container button:hover,
+.container-album .content-title button:hover {
+  transition: all 0.5s;
+  background-color: coral;
+  color: #000;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.container-album {
+  display: flex;
+  height: 50vh;
+  flex: 100%;
+}
+.container-album .photo {
+  background: url("https://images.unsplash.com/photo-1455587734955-081b22074882?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80")
+    no-repeat center center/cover;
+  height: 100%;
+  flex: 50%;
+}
+.container-album .content-title {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  flex: 50%;
+  background-color: #333;
+  padding: 2.5rem;
+}
+.container-album .content-title h3 {
+  margin: 3rem 0 7.5rem 0;
+  font-size: 2.5rem;
+  color: rgb(253, 68, 0);
+  border-bottom: 4px solid rgb(218, 65, 65);
+}
+.container-album .content-title p {
+  color: #fff;
+  font-size: 1.8rem;
+  margin-bottom: 4rem;
+}
+.container-album .content-title h3 span {
+  color: coral;
+}
+.container-album .content-title h3 {
+  color: #fff;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.categories {
+  display: flex;
+}
+
+.categories .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 5rem 5rem;
+}
+.categories .box i {
+  margin: 1rem 0 1.5rem;
+  font-size: 2.8rem;
+}
+
+.categories .box h3,
+p {
+  margin-top: 1rem;
+}
+
+.categories #colored {
+  background-color: coral;
+}
+
+.footer {
+  padding: 2rem;
+  background: #333;
+  color: #fff;
+  text-align: center;
+}
+
+@media (max-width: 648px) {
+  .hero .container h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero .container p {
+    font-size: 1.5rem;
+    margin-bottom: 5rem;
+    padding: 2rem;
+  }
+  .hero .container button,
+  .container-album .content-title button {
+    padding: 1.2rem 1.8rem;
+    font-size: 1.5rem;
+  }
+  .container-album {
+    display: block;
+    overflow: hidden;
+    height: 100vh;
+  }
+  .container-album .photo {
+    display: block;
+    background: url("https://images.unsplash.com/photo-1455587734955-081b22074882?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80")
+      no-repeat center center/cover;
+    height: 50vh;
+  }
+  .container-album .content-title {
+    display: block;
+    height: 50vh;
+    background-color: #333;
+    padding: 1.5rem;
+    overflow: hidden;
+  }
+  .container-album .content-title p {
+    color: #fff;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+  .container-album .content-title h3 span {
+    color: coral;
+  }
+  .container-album .content-title h3 {
+    color: #fff;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  .categories {
+    display: block;
+    overflow: hidden;
+  }
+
+  .categories .box {
+    display: block;
+  }
+}
+
+  </style>
+  
+</html>
